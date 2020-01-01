@@ -1,0 +1,29 @@
+
+	git init                   		初始化仓库
+	
+	git add .                  		将项目添加到暂缓区里
+	
+	git commit -m '初始化项目'     用git管理项目
+	
+	在github.com上新建一个仓库用来关联项目  https://github.com/winning1688888/xyh-wx.git
+	
+	git remote add origin https://github.com/winning1688888/xyh-wx.git     将项目远程关联到gitbub上
+	
+	git push -u origin master   	将项目push到github上，然后刷新github项目,页面就有代码了，代表本地项目已经远程关联到github上了。
+	
+	学习将修改的内容打包成tag，如果修改了index.html文件，然后将这个修改打包成tag '学习怎么使用github' ,分以下几步
+	1.  git add .
+	2.  git commit -m '学习怎么使用github'
+	3.  git tag 01学习怎么使用github  (解释：将修改打包成tag,命名为01学习怎么使用github)
+	4.  git tag (解释：查看所有tag)
+	5.  git log (解释：查看有哪些提交)
+	6.  git reset --hard 版本号  (解释：强制回退到某一个版本号)
+	7.  再重新修改下index.html文件，重复1到4步，重新打包个tag，命名为02知识点2 ，即 git tag 02知识点2 
+	8.  git push --tags 		(解释：将2个tag提交到github上，刷新github页面就可以看到2个tag名称(01学习怎么使用github、02知识点2)了)。
+	
+	将该项目从github上clone下来
+	1.  git clone https://github.com/winning1688888/xyh-wx.git
+	2.  git checkout 01学习怎么使用github  (解释：切换到01学习怎么使用github这个tag上)
+
+
+	git学习链接：https://www.bilibili.com/video/av58993009?p=4
